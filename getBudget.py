@@ -1,3 +1,7 @@
 def getTotalBudget(people):
-    pass
-    '''Your amazing code here'''
+    r = 0
+    for i in people:
+        for k, v in i.items():
+            if k == "budget":
+                r = v+r
+    return r
